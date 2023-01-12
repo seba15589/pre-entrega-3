@@ -1,0 +1,69 @@
+@mixin button($background, $color){
+    background-color: $background;
+    border: 0px;
+    padding: 10px;
+    color: $color;
+    margin: 10px;
+}
+%tarjeta {
+    background-color: cornflowerblue;
+    color:darkred;
+    font-size: 25px;
+    font-style:inherit;
+}
+.autos{
+    @extend %tarjeta;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:solid;
+    text-align: center;
+    border: solid 2px;
+    padding: 10px;
+        .autos__titulo{
+            color:rgb(255, 2, 53);
+            font-family:sans-serif, Geneva, Tahoma, sans-serif;
+        }
+        .autos__img{
+            width: 100%;
+        }
+    }
+.btn1{
+    @include button( #fff, rgb(109, 12, 12) )
+}
+.btn2{
+    @include button( rgb(201, 29, 29), rgb(6, 6, 6) )
+}
+.btn3{
+    @include button( rgb(17, 17, 17), rgb(81, 205, 9) )
+}
+.unidadespadre{
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+    justify-content:space-around;
+   
+}
+.opinionespadre{
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.opiniones{
+   @extend %tarjeta;
+    width: 400px;
+    .opiniones__titulo{
+        background-color: black;
+        color: blue;
+        font-style: normal;
+        text-align: center;
+    }
+}
+.animation{
+    transition: 20s;
+}
+

@@ -1,0 +1,61 @@
+.autos {
+  background-color: cornflowerblue;
+  color: dimgrey;
+  font-size: medium;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: solid;
+  text-align: center;
+  width: 500px;
+  border: solid 2px;
+  padding: 10px;
+}
+
+.autos__titulo {
+  color: crimson;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.autos__img {
+  width: 100%;
+}
+
+.unidadespadre {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.opinionespadre {
+  flex-wrap: wrap;
+  grid-area: opi;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.opiniones {
+  background-color: cornflowerblue;
+  color: darkred;
+  font-size: 25px;
+  font-style: italic;
+  width: 400px;
+}
+
+.opiniones__titulo {
+  background-color: black;
+  color: blue;
+  font-style: normal;
+  text-align: center;
+}
+
+.animation {
+  transition: 20s;
+}
+
+.contactopadre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}

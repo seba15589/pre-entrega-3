@@ -1,0 +1,40 @@
+footer {
+    grid-area: footer;
+    background-color:#A31925; 
+    color: white;   
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:flex-start;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    > .compania{
+        margin: 10px;  
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      > .sucursales{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items:flex-end ;
+        justify-items: end;
+        > .sucursal{
+            margin: 10px;
+            > h3{
+                margin: 10px 0px;
+              }
+              > ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                li> a>i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

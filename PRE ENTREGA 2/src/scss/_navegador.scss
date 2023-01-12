@@ -1,0 +1,48 @@
+.navpadre{
+    display: flex;
+}
+.logo{
+    width: 64px;
+}
+nav{
+    grid-area: nav;
+}
+.navegador{
+    background-color:cornflowerblue;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    font-family:sans-serif;
+    text-align: center;
+    padding: 10px;     
+    display: flex; 
+    justify-content: space-between;    
+    > ul {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        > li{
+            position: relative;
+            &:hover ul{
+                max-height: 300px;
+             }
+             > ul {
+                max-height: 0    ; 
+                overflow: hidden;
+                position: absolute;
+                list-style-type: none;
+                background-color: cornflowerblue;
+                left: -12px;    
+            }
+        }
+        li  a {
+            display: block;
+            color: aliceblue;
+            list-style: none;
+            font-size: 20px;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+    }
+}

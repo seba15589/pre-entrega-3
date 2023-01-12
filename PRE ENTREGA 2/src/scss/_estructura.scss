@@ -1,0 +1,149 @@
+@media(min-width:577px){
+    .fa-bars{
+        display: none;
+    }
+}
+@media(max-width:576px) {
+    .navegador{
+        justify-content: space-between;
+    }
+    .navegador > .fa-bars {
+    display: block;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 20px;
+    }
+    .navegador > .fa-bars:hover + ul {
+        left: 0;
+    }
+    .navegador > ul {
+       position: fixed;
+       flex-direction: column;
+       background-color: cornflowerblue;
+       width: 250px;
+       height: 100vh;
+       justify-content: start;
+       padding-top: 60px;
+       align-items: center;
+       left: -300px;
+       transition: 0.2;
+    }
+    .navegador > ul:hover {
+        left: 0;
+    }
+    .logo{
+        position: static;
+    }
+    .bodyindex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer {
+        display:flex;
+        flex-direction:column;       
+        flex-wrap: wrap; 
+        justify-content: start;
+        align-items: flex-start;
+        }
+    footer > .compania{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer > .sucursales{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:start;
+        padding: 10px;
+    }
+    .financiacionpadre{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .logobanco{
+     display: flex;
+     flex-direction: column;
+    }
+}
+
+.header{
+    grid-area: header;
+    background-image: url(../images/abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-header-or-sidebar-graphic-art-image.jpg);
+    color:crimson;
+    font-size: 35px;
+    font-family:sans-serif;
+    text-decoration: solid;
+    height: 100px;;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    grid-area: autos;
+}
+.seccion{
+    background-color: burlywood;
+    color: brown;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: solid;
+    text-align:left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    }
+.tabla{
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    width: fit-content;
+    height: 250px;
+    }
+th,td{
+    border: solid 1px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center;
+    background-color: chocolate;
+}
+.financiacionparrafo{
+    color:darkcyan;
+    font-family: serif;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+.financiacionpadre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.padrequienes{
+    display: flex;
+    justify-content: space-around;
+}
+.texto{
+    color:darkcyan;
+    font-family: serif;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    
+}

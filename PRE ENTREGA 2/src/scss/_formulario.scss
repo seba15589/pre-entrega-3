@@ -1,0 +1,70 @@
+.formulario2{
+    font-family: 'Quicksand', sans-serif;
+    padding: 30px;
+    background-color: cornflowerblue;
+    max-width: 900px;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px ;
+    grid-template-areas: "titulo titulo"
+                         "nomApell email"
+                         "tel  asunto"
+                         "mensaje mensaje"
+                         "btn   btn"
+                          ;
+    h2:nth-child(1){
+    grid-area: titulo;
+    color: white;
+    font-size: 50px;
+    }
+    label:nth-child(2){
+    grid-area: nomApell;
+    }
+    label:nth-child(3){
+    grid-area: email;
+    }
+    label:nth-child(4){
+    grid-area: tel;
+    }
+    label:nth-child(5){
+    grid-area: asunto;
+    }
+    label:nth-child(6){
+    grid-area: mensaje;
+    }
+    button:nth-child(7){
+    grid-area: btn;
+    background-color: grey;
+    border: 0;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    ;
+    }
+    label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+    }
+    > label > input , .formulario2 > label > textarea {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        border-bottom: 1px solid white;
+    }
+    > label > textarea{
+        height: 70px;
+    }
+    > label > input:focus{
+        color: aliceblue;
+    }
+}
