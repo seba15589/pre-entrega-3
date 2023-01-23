@@ -10,7 +10,8 @@
 }
 
 .logo {
-  width: 64px;
+  width: 34px;
+  height: 10px;
 }
 
 nav {
@@ -27,6 +28,8 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 .navegador > ul {
   list-style: none;
@@ -162,13 +165,6 @@ footer > .sucursales > .sucursal > ul li > a > i {
   color: aliceblue;
 }
 
-.opiniones, .autos {
-  background-color: cornflowerblue;
-  color: darkred;
-  font-size: 25px;
-  font-style: inherit;
-}
-
 .autos {
   display: flex;
   flex-direction: row;
@@ -180,6 +176,8 @@ footer > .sucursales > .sucursal > ul li > a > i {
   text-align: center;
   border: solid 2px;
   padding: 10px;
+  z-index: -2;
+  position: absolute;
 }
 .autos .autos__titulo {
   color: rgb(255, 2, 53);
@@ -282,6 +280,9 @@ footer > .sucursales > .sucursal > ul li > a > i {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .carousel1 {
+    height: 500px;
+  }
   footer {
     display: flex;
     flex-direction: column;
@@ -311,6 +312,21 @@ footer > .sucursales > .sucursal > ul li > a > i {
     flex-direction: column;
   }
 }
+.header {
+  grid-area: header;
+  background-image: url(../images/abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-header-or-sidebar-graphic-art-image.jpg);
+  color: crimson;
+  font-size: 35px;
+  font-family: sans-serif;
+  text-decoration: solid;
+  height: 100px;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   grid-area: autos;
 }
@@ -380,4 +396,11 @@ th, td {
   font-size: 30px;
   padding: 10px;
   margin: 10px;
+}
+
+.autos, .opiniones {
+  background-color: cornflowerblue;
+  color: darkred;
+  font-size: 25px;
+  font-style: inherit;
 }

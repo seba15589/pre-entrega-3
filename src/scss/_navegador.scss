@@ -2,7 +2,8 @@
     display: flex;
 }
 .logo{
-    width: 64px;
+    width: 34px;
+    height: 10px;
 }
 nav{
     grid-area: nav;
@@ -17,6 +18,8 @@ nav{
     padding: 10px;     
     display: flex; 
     justify-content: space-between;    
+    position: relative;
+    z-index: 1;
     > ul {
         list-style: none;
         display: flex;

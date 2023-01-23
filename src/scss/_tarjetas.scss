@@ -5,12 +5,6 @@
     color: $color;
     margin: 10px;
 }
-%tarjeta {
-    background-color: cornflowerblue;
-    color:darkred;
-    font-size: 25px;
-    font-style:inherit;
-}
 .autos{
     @extend %tarjeta;
     display: flex;
@@ -23,6 +17,8 @@
     text-align: center;
     border: solid 2px;
     padding: 10px;
+    z-index: -2;
+    position: absolute;
         .autos__titulo{
             color:rgb(255, 2, 53);
             font-family:sans-serif, Geneva, Tahoma, sans-serif;

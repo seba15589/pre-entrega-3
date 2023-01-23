@@ -4,34 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financiación</title>
+    <title>RED CAR - FINANCIACION</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <nav>
-        <div class="navegador">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Financiacion.html">Financiacion</a></li>
-                <li><a href="./QuienesSomos2.html">Quienes Somos</a></li>
-                <li><a href="./unidades2.html">Unidades</a>
-                    <ul>
-                        <li><a href="">Unidad 1</a></li>
-                        <li><a href="">Unidad 2</a></li>
-                        <li><a href="">Unidad 3</a></li>
-                        <li><a href="">Unidad 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="./contactos2.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg" style="background-color: #1c86d1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../pre-entrega-3/assets/images/logo.png" alt="REDCAR" width="30" height="24">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Financiacion.html">Financiacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./QuienesSomos2.html">Nosotros</a>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./pages/unidades2.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Unidades
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./unidades2.html">Unidad 1</a></li>
+                  <li><a class="dropdown-item" href="./unidades2.html">Unidad 2</a></li>
+                  <li><a class="dropdown-item" href="./unidades2.html">Unidad 3</a></li>
+                  <li><a class="dropdown-item" href="./unidades2.html">Unidad 4</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contactos2.html">Contactos</a>
+            </li>
+
             </ul>
-            <img class="logo" src="../assets/images/logo.jpg" width="100px" alt="">
-        
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
-    </nav>
-    <header class="header">
-        <h1>REDCAR</h1>
+      </nav>
+    <header>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="100">
+                <img src="../assets/images/logo.jpg" class="d-block w-100" alt="logoRedCar">
+              </div>
+              <div class="carousel-item active" data-bs-interval="50">
+                <img src="../assets/images/carousel1.jpg" class="d-block w-100" alt="faros">
+              </div>
+              <div class="carousel-item" data-bs-interval="50">
+              <img src="../assets/images/carousel2.jpg" class="d-block w-100" alt="faros">
+              </div>
+              <div class="carousel-item"data-bs-interval="50">
+                <img src="../assets/images/carousel3.jpg" class="d-block w-100" alt="faros noche">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </header>
     <main>
         <div class="seccion">
@@ -117,5 +163,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -39,6 +39,9 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .carousel1{
+        height:500px;
+    }
     footer {
         display:flex;
         flex-direction:column;       
@@ -144,6 +147,5 @@ th,td{
     font-family: serif;
     font-size: 30px;
     padding: 10px;
-    margin: 10px;
-    
+    margin: 10px;   
 }
