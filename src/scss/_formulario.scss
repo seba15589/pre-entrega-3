@@ -1,3 +1,4 @@
+
 .formulario2{
     font-family: 'Quicksand', sans-serif;
     padding: 30px;
@@ -51,9 +52,10 @@
     }
     label{
     display: flex;
-    flex-direction: column;
+    
     gap: 10px;
     color: aliceblue;
+    flex-wrap: wrap;
     }
     > label > input , .formulario2 > label > textarea {
         background-color: transparent;
@@ -66,5 +68,21 @@
     }
     > label > input:focus{
         color: aliceblue;
+    }
+}
+@media(max-width:576px) {
+    .formulario2{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 60px ;
+    grid-template-areas:"titulo"
+                        "nomApell" 
+                        "email"
+                        "tel"  
+                        "asunto"
+                        "mensaje"
+                        "btn"
+                          ;
     }
 }
